@@ -9,6 +9,7 @@ func _ready():
 
 func _process(delta):
 	var velocity = Vector2()
+	
 	if Input.is_action_pressed("ui_right"):
 		velocity.x += 1000
 	if Input.is_action_pressed("ui_left"):
@@ -16,3 +17,4 @@ func _process(delta):
 
 	position += velocity * delta
 	position.x = clamp(position.x, 0, screensize.x)
+	#print(position.x)

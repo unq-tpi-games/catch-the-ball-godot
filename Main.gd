@@ -10,4 +10,6 @@ func _input(event):
 		var new_ball = Ball.instance()
 		new_ball.position = get_viewport().get_mouse_position()
 		add_child(new_ball)
+		print(get_viewport().get_mouse_position().x)
+		
 

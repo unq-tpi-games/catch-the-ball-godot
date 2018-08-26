@@ -17,7 +17,8 @@ position = Vector2( 127.821, 229.493 )
 
 [node name="Box" parent="." index="2" instance=ExtResource( 3 )]
 
-position = Vector2( -327.456, 7.55261 )
+position = Vector2( 92.9722, 105.737 )
 scale = Vector2( 0.84817, 0.816542 )
+_sections_unfolded = [ "Collision", "Pickable", "Transform", "Visibility" ]
 
 
