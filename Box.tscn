@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Box.gd" type="Script" id=1]
+[ext_resource path="res://RTS_Crate.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 292.535, 49.3275 )
+
+[node name="Box" type="StaticBody2D"]
+
+position = Vector2( 0, -5.87067 )
+scale = Vector2( 1, 0.816542 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Pickable" ]
+
+[node name="RTS_Crate" type="Sprite" parent="." index="0"]
+
+position = Vector2( 510.51, 599.73 )
+scale = Vector2( 0.450726, 0.401452 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Animation", "Material", "Offset", "Pause", "Region", "Transform", "Visibility", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 514.851, 603.623 )
+scale = Vector2( 0.384269, 1.91475 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+
