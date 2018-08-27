@@ -1,4 +1,5 @@
-extends StaticBody2D
+#extends StaticBody2D
+extends Area2D
 var screensize
 
 func start():
@@ -18,3 +19,10 @@ func _process(delta):
 	position += velocity * delta
 	position.x = clamp(position.x, 0, screensize.x)
 	#print(position.x)
+
+
+
+
+
+func _on_Box_body_entered(body):
+	body.hide()
