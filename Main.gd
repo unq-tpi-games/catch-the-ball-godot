@@ -15,7 +15,6 @@ func _ready():
 
 func _process(delta):
 	var ran = rand_range(0, 1024)
-	print (ran)
 	if (ran < 50):
 		var new_ball = Ball.instance()
 		new_ball.position.y = 0
