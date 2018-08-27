@@ -1,6 +1,7 @@
 extends Node
 
 export (PackedScene) var Ball
+var score = 0
 
 func _ready():
 	$Box.start()
@@ -13,3 +14,9 @@ func _input(event):
 		#print(get_viewport().get_mouse_position().x)
 		
 
+
+
+func _on_Box_body_entered(body):
+	body.hide()
+	score += 1
+	$Label.text = String(score)

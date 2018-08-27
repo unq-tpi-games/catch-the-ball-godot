@@ -34,6 +34,4 @@ scale = Vector2( 0.384269, 1.93887 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
 
-[connection signal="body_entered" from="." to="." method="_on_Box_body_entered"]
-
 

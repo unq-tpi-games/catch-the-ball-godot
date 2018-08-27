@@ -24,5 +24,5 @@ func _process(delta):
 
 
 
-func _on_Box_body_entered(body):
-	body.hide()
+#func _on_Box_body_entered(body):
+#	body.hide()
