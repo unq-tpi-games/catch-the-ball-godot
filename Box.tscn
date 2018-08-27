@@ -6,9 +6,9 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 292.535, 49.3275 )
+extents = Vector2( 247.814, 27.9029 )
 
-[node name="Box" type="Area2D"]
+[node name="Box" type="Area2D" index="0"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -29,8 +29,8 @@ _sections_unfolded = [ "Animation", "Material", "Offset", "Pause", "Region", "Tr
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( 1.20154, 497.904 )
-scale = Vector2( 0.384269, 1.93887 )
+position = Vector2( 6.64304, 418.449 )
+scale = Vector2( 0.384269, 0.688394 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
 
